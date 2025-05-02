@@ -1,0 +1,49 @@
+@import "./rose-pine.css";
+
+* {
+  font-family: Jetbrains Mono NerdFont;
+}
+
+#waybar {
+  background: transparent;
+  color: #7dd3fc;
+  padding: 0.5rem;
+}
+
+#clock {
+  margin-right: 0.5rem;
+}
+
+#tray {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+#workspaces button:hover {
+  border-color: white;
+}
+
+#workspaces button {
+  color: @muted;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+  background-color: #262626;
+}
+
+#workspaces button.active {
+  color: #7dd3fc;
+}
+
+#window {
+  padding: 0.5rem;
+}
+
+#network {
+  margin-right: 8px;
+}
+
+#pulseaudio, #wireplumber, #cpu, #temperature, #memory {
+  margin-right: 4px;
+}
