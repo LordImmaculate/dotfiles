@@ -1,0 +1,27 @@
+[global]
+    # Transparency for blur (80 = semi-transparent)
+    frame_color = "#89b4fa"
+    background = "#1e1e2e1A"   # semi-transparent for blur
+    foreground = "#e0e0e0"
+    highlight = "#89b4fa"
+    separator_color = frame
+    frame_width = 2
+
+    padding = 10
+    horizontal_padding = 10
+    corner_radius = 10
+
+    font = Jetbrains Mono NerdFont
+
+    transparency = 0  # Must be 0 when using alpha in hex
+
+    offset = 20x20
+    width = (300, 500)
+    height = 300
+
+    enable_markup = yes
+    word_wrap = yes
+
+    show_indicators = no
+    separator_height = 2
+
