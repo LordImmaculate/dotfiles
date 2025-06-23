@@ -118,5 +118,8 @@
   "battery": {
     "format": "{capacity}% {icon}",
     "format-icons": ["", "", "", "", ""]
+  },
+  "mpris": {
+    "format": "{player"
   }
 }
