@@ -2,7 +2,7 @@
   "layer": "top",
   "position": "top",
   "modules-left": ["clock", "date", "hyprland/workspaces", "tray"],
-  // "modules-center": ["hyprland/window"],
+  "modules-center": ["hyprland/window"],
   "modules-right": [
     "mpris",
     "temperature",
@@ -96,6 +96,12 @@
     "format-icons": ["", "", "", "", ""]
   },
   "mpris": {
-    "format": "{player}"
+  "player": "spotify",
+  "format": "{player_icon} {artist} - {title}",
+  "format-paused": " {artist} - {title}",
+  "format-stopped": "",
+  "player-icons": {
+    "spotify": ""
   }
+}
 }
