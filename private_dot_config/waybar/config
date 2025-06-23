@@ -8,9 +8,10 @@
     "memory",
     "cpu",
     "network",
-    "wireplumber",
+    "wireplumber", // Using wireplumber for audio
     "battery"
   ],
+
   "custom/separator": {
     "exec": "echo \"|\"",
     "format": "{}"
@@ -27,6 +28,10 @@
     "interval": 60,
     "tooltip": true,
     "tooltip-format": "  {:%H:%M  󰸗  %d %B }"
+  },
+  "date": { // Added definition for 'date' module
+    "format": "{:%A, %d %B}",
+    "tooltip-format": "{:%Y-%m-%d}"
   },
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -46,7 +51,7 @@
       "8": "8",
       "9": "9",
       "10": "10",
-      // 11-10
+      // 11-10 (These are duplicates of 1-10 for different monitors/rules, likely intended)
       "11": "1",
       "12": "2",
       "13": "3",
@@ -57,29 +62,6 @@
       "18": "8",
       "19": "9",
       "110": "10"
-
-      // 1-10
-      // "1": "一",
-      // "2": "二",
-      // "3": "三",
-      // "4": "四",
-      // "5": "五",
-      // "6": "六",
-      // "7": "七",
-      // "8": "八",
-      // "9": "九",
-      // "10": "十",
-      // // 11-10
-      // "11": "一",
-      // "12": "二",
-      // "13": "三",
-      // "14": "四",
-      // "15": "五",
-      // "16": "六",
-      // "17": "七",
-      // "18": "八",
-      // "19": "九",
-      // "110": "十"
     }
   },
   "hyprland/window": {
@@ -93,7 +75,7 @@
   },
   "temperature": {
     "format": "{icon} {temperatureC}°C ",
-    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
     "critical-threshold": 80,
     "format-icons": ["", "", ""]
   },
@@ -105,16 +87,18 @@
     "format": " {usage}% ",
     "tooltip": "false"
   },
-  "pulseaudio": {
-    "format": " {volume}%",
-    "scroll-step": 5,
-    "on-click": "pavucontrol"
-  },
+  // Use wireplumber or pulseaudio, not both. I've kept wireplumber here.
+  // If you use pulseaudio, remove the wireplumber block and uncomment the pulseaudio block.
   "wireplumber": {
     "format": "󰕾 {volume}%",
     "scroll-step": 5,
     "on-click": "pavucontrol"
   },
+  // "pulseaudio": { // Kept commented as wireplumber is active
+  //   "format": " {volume}%",
+  //   "scroll-step": 5,
+  //   "on-click": "pavucontrol"
+  // },
   "battery": {
     "format": "{capacity}% {icon}",
     "format-icons": ["", "", "", "", ""]
