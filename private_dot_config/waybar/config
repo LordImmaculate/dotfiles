@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "modules-left": ["clock", "date", "hyprland/workspaces", "tray"],
+  "modules-left": ["clock", "date", "hyprland/workspaces", "tray", "mpris"],
   "modules-center": ["hyprland/window"],
   "modules-right": [
     "temperature",
@@ -85,7 +85,28 @@
   "hyprland/window": {
     "format": "{}"
   },
-  "network": {
+  "mpris": {
+        "format": "{player_icon} {status_icon} {artist} - {title}",
+        "format-paused": "{player_icon} {status_icon} <i>{artist} - {title}</i>",
+        "format-stopped": "{player_icon}",
+        "player-icons": {
+            "default": "🎵", // A default icon
+            "spotify": "", // Spotify icon (requires a Nerd Font or Font Awesome)
+            "firefox": "", // Firefox icon
+            "mpv": "󰈣"      // MPV icon
+        },
+        "status-icons": {
+            "playing": "▶",
+            "paused": "⏸",
+            "stopped": "■"
+        },
+        "on-click": "playerctl play-pause",
+        "on-middle-click": "playerctl previous",
+        "on-right-click": "playerctl next",
+        // "player": "spotify", // Uncomment and specify if you want to explicitly track one player
+        // "ignored-players": ["firefox", "chromium"] // Ignore specific players
+    },
+    "network": {
     "format": " {bandwidthDownBits}  {bandwidthUpBits} ",
     // "tooltip": "{ifname}",
     "tooltip-format": "{essid}",
@@ -119,7 +140,5 @@
     "format": "{capacity}% {icon}",
     "format-icons": ["", "", "", "", ""]
   },
-  "mpris": {
-    "format": "{player"
-  }
+  
 }
