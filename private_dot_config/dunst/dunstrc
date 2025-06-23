@@ -1,7 +1,6 @@
 [global]
-    # Transparency for blur (80 = semi-transparent)
-    frame_color = "#89b4fa"
-    background = "#1e1e2e1A"   # semi-transparent for blur
+    frame_color = "#7dd3fc"
+    background = "#1e1e2e1A"   
     foreground = "#e0e0e0"
     highlight = "#89b4fa"
     separator_color = frame
@@ -13,7 +12,7 @@
 
     font = Jetbrains Mono NerdFont
 
-    transparency = 0  # Must be 0 when using alpha in hex
+    transparency = 0  
 
     offset = 20x20
     width = (300, 500)
