@@ -123,3 +123,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [[ -f /home/emild/.dart-cli-completion/zsh-config.zsh ]] && . /home/emild/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+fpath+=~/.zsh/completions
