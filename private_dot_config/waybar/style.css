@@ -45,3 +45,7 @@
 #pulseaudio, #wireplumber, #cpu, #temperature, #memory {
   margin-right: 4px;
 }
+
+#mpris {
+  margin-right: 8px;
+}
