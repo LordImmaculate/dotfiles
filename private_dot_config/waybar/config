@@ -4,7 +4,6 @@
   "modules-left": ["clock", "date", "hyprland/workspaces", "tray"],
   "modules-center": ["hyprland/window"],
   "modules-right": [
-    "mpris",
     "temperature",
     "memory",
     "cpu",
