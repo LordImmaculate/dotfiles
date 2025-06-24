@@ -18,17 +18,22 @@
 }
 
 #workspaces button:hover {
+  color: black;
   border-color: white;
   background-color: white;
 }
 
 #workspaces button {
-  color: black;
+  color: white;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 #workspaces button.active {
   color: #7dd3fc;
+}
+
+#workspaces button.active:hover {
+ color: black;
 }
 
 #window {
