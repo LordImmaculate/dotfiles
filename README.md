@@ -40,3 +40,10 @@ Make sure this is in `~/.config/hypr/hyprland.conf`:
 ```
 exec-once = hyprlock
 ```
+
+## Monitor setup
+Create `~/.config/hypr/monitors.conf` with the monitors config, for example:
+```
+monitor=DP-6, 1920x1080@144, 0x0, 1
+```
+You can view instructions on how to get your monitor ID [here](https://wiki.hyprland.org/Configuring/Monitors/)
