@@ -3,7 +3,7 @@ My dotfiles
 
 ## Software installation
 ```
-yay -S hyprland hyprsome hyprlock hypridle wofi waybar xdg-desktop-portal-gtk xdg-desktop-portal-hyprland qt5ct qt6ct kvantum kvantum-qt5 nwg-look
+yay -S hyprland hyprsome hyprlock hypridle hyprpaper wofi waybar xdg-desktop-portal-gtk xdg-desktop-portal-hyprland qt5ct qt6ct kvantum kvantum-qt5 nwg-look
 ```
 
 ## Themes used
