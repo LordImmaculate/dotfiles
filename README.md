@@ -3,7 +3,7 @@ My dotfiles
 
 ## Software installation
 ```
-yay -S hyprland hyprsome hyprlock hypridle hyprpaper hyprpicker wofi waybar xdg-desktop-portal-gtk xdg-desktop-portal-hyprland qt5ct qt6ct kvantum kvantum-qt5 nwg-look
+yay -S hyprland hyprsome hyprlock hypridle hyprpaper hyprpicker wofi waybar dunst xdg-desktop-portal-gtk xdg-desktop-portal-hyprland qt5ct qt6ct kvantum kvantum-qt5 nwg-look
 ```
 If you are on a laptop, follow this guide to add touchpad support:
 [Hyprgrass](https://github.com/horriblename/hyprgrass)
