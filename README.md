@@ -5,6 +5,8 @@ My dotfiles
 ```
 yay -S hyprland hyprsome hyprlock hypridle hyprpaper hyprpicker wofi waybar xdg-desktop-portal-gtk xdg-desktop-portal-hyprland qt5ct qt6ct kvantum kvantum-qt5 nwg-look
 ```
+If you are on a laptop, follow this guide to add touchpad support:
+[Hyprgrass](https://github.com/horriblename/hyprgrass)
 
 ## Themes used
 GTK: [Materia Transparent](https://github.com/ckissane/materia-theme-transparent)  
