@@ -1,0 +1,9 @@
+{
+  "paths": [
+    ["Shutdown", "shutdown 0"],
+    ["Reboot", "reboot"],
+    ["Suspend", "systemctl suspend"],
+    ["Logout", "loginctl terminate-user emild"],
+    ["Lock", "hyprlock"]
+  ]
+}
