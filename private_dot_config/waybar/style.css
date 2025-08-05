@@ -44,7 +44,7 @@
   margin-right: 8px;
 }
 
-#pulseaudio, #wireplumber, #cpu, #temperature, #memory {
+#pulseaudio, #wireplumber, #cpu, #temperature, #memory, #battery {
   margin-right: 4px;
 }
 

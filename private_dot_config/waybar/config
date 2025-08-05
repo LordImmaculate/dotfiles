@@ -91,7 +91,7 @@
     "on-click": "pavucontrol"
   },
   "battery": {
-    "format": "{capacity}% {icon}",
+    "format": "{icon} {capacity}%",
     "format-icons": ["", "", "", "", ""]
   },
   "mpris": {
