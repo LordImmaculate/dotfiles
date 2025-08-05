@@ -4,6 +4,7 @@
     ["Reboot", "reboot"],
     ["Suspend", "systemctl suspend"],
     ["Logout", "loginctl terminate-user emild"],
-    ["Lock", "hyprlock"]
+    ["Lock", "hyprlock"],
+    ["Connect Wi-Fi", "wofi-iwd"]
   ]
 }
