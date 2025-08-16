@@ -130,3 +130,5 @@ fi
 
 
 fpath+=~/.zsh/completions
+
+export MANPAGER='nvim +Man!'
