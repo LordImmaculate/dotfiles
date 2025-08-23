@@ -1,0 +1,26 @@
+[global]
+    frame_color = "#7dd3fc"
+    background = "#1e1e2e1A"   
+    foreground = "#e0e0e0"
+    highlight = "#89b4fa"
+    separator_color = frame
+    frame_width = 2
+
+    padding = 10
+    horizontal_padding = 10
+    corner_radius = 10
+
+    font = Jetbrains Mono NerdFont
+
+    transparency = 0  
+
+    offset = 20x20
+    width = (300, 500)
+    height = 300
+
+    enable_markup = yes
+    word_wrap = yes
+
+    show_indicators = no
+    separator_height = 2
+

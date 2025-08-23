@@ -128,8 +128,17 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   Hyprland
 fi
 
-
 fpath+=~/.zsh/completions
 
 export MANPAGER='nvim +Man!'
 export EDITOR=nvim
+
+cmcd() {
+    cd $(chezmoi source-path)
+}
+
+alias ls='exa --icons --color=always --group-directories-first'
+alias ll='exa -alF --icons --color=always --group-directories-first'
+alias la='exa -a --icons --color=always --group-directories-first'
+alias l='exa -F --icons --color=always --group-directories-first'
+alias l.='exa -a | egrep "^\."'
