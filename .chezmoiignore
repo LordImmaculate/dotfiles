@@ -3,3 +3,4 @@ LICENSE
 .config/hypr/monitors.conf
 .config/hypr/startups.conf
 .config/hypr/hyprpaper.conf
+.config/nvim/lazy-lock.json

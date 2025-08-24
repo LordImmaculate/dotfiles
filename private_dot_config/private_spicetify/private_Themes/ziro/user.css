@@ -5,3 +5,7 @@
     --br-2: 8px;
     --scrollbar: unset;
 }
+
+*{
+font-family: "figtree" !important
+}

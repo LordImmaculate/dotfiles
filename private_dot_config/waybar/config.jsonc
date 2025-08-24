@@ -55,7 +55,7 @@
 
     "custom/exit": {
         "format": "",
-        "on-click": "~/.config/rofi/scripts/powermenu.sh",
+        "on-click": "wlogout",
         "on-click-right": "hyprlock",
         "tooltip-format": "Left: Power menu\nRight: Lock screen"
     },
