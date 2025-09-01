@@ -3,7 +3,7 @@
     "spacing": 4,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "mpris", "pulseaudio", "custom/exit"],
+    "modules-right": ["group/tray", "hyprland/language", "mpris", "pulseaudio", "custom/exit"],
     "margin-top": 4,
     "margin-left": 4,
     "margin-right": 4,
@@ -42,7 +42,7 @@
     },
 
     "mpris": {
-        "format": "{player_icon} {artist} • {title}",
+        "format": "{player_icon} {title}",
         "max-length": 25,
         "player-icons": {
           "default": "󰎆 ",

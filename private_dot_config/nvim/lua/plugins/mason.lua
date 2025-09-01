@@ -6,7 +6,7 @@ return {
 	{
 		"mason-org/mason-lspconfig.nvim",
 		opts = {
-			ensure_insalled = { "lua_ls", "stylua", "clangd", "clang-format" },
+			ensure_insalled = { "lua_ls", "stylua", "clangd", "clang-format", "prettierd", "svelte-language-server" },
 		},
 		dependencies = {
 			"mason-org/mason.nvim",

@@ -7,6 +7,8 @@ return {
 					lua = { "stylua" },
 					-- This setup tries prettierd first, then falls back to prettier
 					javascript = { "prettierd", "prettier" },
+					typescript = { "prettierd", "prettier" },
+					svelte = { "prettierd", "prettier" },
 					c = { "cland" },
 					hyprlang = { "hyprls" },
 				},
