@@ -4,3 +4,5 @@ LICENSE
 .config/hypr/startups.conf
 .config/hypr/hyprpaper.conf
 .config/nvim/lazy-lock.json
+.config/kitty/colors.conf
+.config/waybar/colors.css
