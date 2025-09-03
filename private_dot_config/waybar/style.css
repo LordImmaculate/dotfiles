@@ -119,7 +119,9 @@ button {
     padding: 5 8 5 8
 }
 
-#custom-exit, #battery {
+#custom-exit,
+#battery,
+#pulseaudio.muted {
     padding: 5 13 5 10
 }
 
