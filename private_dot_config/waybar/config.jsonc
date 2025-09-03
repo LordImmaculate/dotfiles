@@ -3,7 +3,7 @@
     "spacing": 4,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "mpris", "pulseaudio", "custom/exit"],
+    "modules-right": ["tray", "mpris", "pulseaudio", "battery", "custom/exit"],
     "margin-top": 4,
     "margin-left": 4,
     "margin-right": 4,
@@ -65,5 +65,16 @@
         "format-en": "us",
         "format-tr": "trq",
         "on-click": "hyprctl switchxkblayout vxe-v87-vxe-v87 next"
+    },
+
+    "battery": {
+    "format": "{capacity}% {icon}",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "states": {
+      "warning": 30,
+      "critical": 15
     }
+  }
 }

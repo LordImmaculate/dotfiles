@@ -104,7 +104,8 @@ button {
 #pulseaudio,
 #mpris,
 #custom-exit,
-#language {
+#language,
+#battery {
     background-color: @surface_container;
     color: @primary;
     border-radius: 14px;
@@ -118,21 +119,23 @@ button {
     padding: 5 8 5 8
 }
 
-#custom-exit {
+#custom-exit, #battery {
     padding: 5 13 5 10
 }
 
 #pulseaudio:hover,
 #mpris:hover,
 #custom-exit:hover,
-#language:hover {
+#language:hover,
+#battery:hover {
     background-color: @surface_container_high;
 }
 
 #pulseaudio:active,
 #mpris:active,
 #custom-exit:active,
-#language:active {
+#language:active,
+#battery:active {
     background-color: #fff;
     color: #fff;
 }
