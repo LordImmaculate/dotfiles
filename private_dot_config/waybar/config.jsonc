@@ -38,7 +38,7 @@
     "pulseaudio": {
         "format": "   {volume}%",
         "format-muted": "",
-        "on-click": "kitty --title pulsemixer -e pulsemixer"
+        "on-click": "pavucontrol"
     },
 
     "mpris": {
