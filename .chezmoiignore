@@ -2,7 +2,7 @@ README.md
 LICENSE
 .config/hypr/monitors.conf
 .config/hypr/startups.conf
-.config/hypr/hyprpaper.conf
+.config/hypr/keyboard.conf
 .config/nvim/lazy-lock.json
 .config/kitty/colors.conf
 .config/waybar/colors.css
