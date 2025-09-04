@@ -6,3 +6,5 @@ LICENSE
 .config/nvim/lazy-lock.json
 .config/kitty/colors.conf
 .config/waybar/colors.css
+.config/spicetify/Themes/ziro/color.ini
+.config/spicetify/Themes/ziro/.git
