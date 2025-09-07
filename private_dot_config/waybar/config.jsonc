@@ -55,7 +55,7 @@
 
     "custom/exit": {
         "format": "",
-        "on-click": "wlogout",
+        "on-click": "nwg-bar",
         "on-click-right": "hyprlock",
         "tooltip-format": "Left: Power menu\nRight: Lock screen"
     },
