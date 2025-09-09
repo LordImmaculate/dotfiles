@@ -1,0 +1,10 @@
+[user]
+	email = 101836390+LordImmaculate@users.noreply.github.com
+	name = LordImmaculate
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEnGD6wuc68UvM59NrHxsmLerg3gnCr+chSIKa7cTINk
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
