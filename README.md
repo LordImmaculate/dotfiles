@@ -3,14 +3,11 @@ My dotfiles
 
 ## Software installation
 ```
-yay -S hyprland hyprsome hyprlock hypridle hyprpaper hyprpicker wofi waybar dunst pavucontrol neovim slurp grim pipewire wireplumber pipewire-pulse xdg-desktop-portal-gtk xdg-desktop-portal-hyprland qt5ct qt6ct kvantum kvantum-qt5 nwg-look
+TBD (Fedora Switch)
 ```
-If you are on a laptop, follow this guide to add touchpad support:
-[Hyprgrass](https://github.com/horriblename/hyprgrass)
 
 ## Themes used
-GTK: [Materia Transparent](https://github.com/ckissane/materia-theme-transparent)  
-QT (with Kvantum): [Nordic Dark](https://store.kde.org/p/1326272/) (Allow transparency in Kvantum Manager)
+GTK: [adw-gtk3-theme](https://github.com/lassekongo83/adw-gtk3) (DNF)  
 
 ## Autologin
 I recommend enabling autologin, since hyprlock will automatically start on login.
@@ -37,7 +34,7 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
 fi
 ```
 
-Make sure this is in `~/.config/hypr/hyprland.conf`:
+Make sure this is in `~/.config/hypr/autostarts.conf`:
 
 ```
 exec-once = hyprlock
