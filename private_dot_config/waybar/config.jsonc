@@ -16,7 +16,7 @@
         "transition-left-to-right": false,
         "click-to-reveal": false
       },
-      "modules": ["custom/traybutton", "tray"],
+      "modules": ["custom/traybutton", "tray"]
     },
 
     "tray": {
@@ -55,7 +55,7 @@
 
     "custom/exit": {
         "format": "",
-        "on-click": "nwg-bar",
+        "on-click": "power-menu",
         "on-click-right": "hyprlock",
         "tooltip-format": "Left: Power menu\nRight: Lock screen"
     },

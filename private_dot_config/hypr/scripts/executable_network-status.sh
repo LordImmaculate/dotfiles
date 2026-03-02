@@ -3,8 +3,24 @@
 
 ADAPTER=$(ip route | grep default | awk '{print $5}')
 if [[ $ADAPTER == w* ]]; then
-	SSID=$(echo 'station wlan0 show' | iwctl | awk '/Connected network/ {for (i=1; i<=NF; i++) if ($i == "network") {print $(i+1); for (j=i+2; j<=NF; j++) printf " %s", $j; print ""; break}}')
-	echo "$ADAPTER:" $SSID
+	LEVEL=$(nmcli -f IN-USE,SIGNAL device wifi list | grep '*' | awk '{print $2}')
+
+	ICON='<span>󰤮 </span>'
+
+	if [ -n "<span>$LEVEL</span>" ]; then
+         if [ "<span>$LEVEL</span>" -ge 80 ]; then
+            ICON='<span>󰤨 </span>' # Strong
+         elif [ '<span>$LEVEL</span>' -ge 60 ]; then
+            ICON='<span>󰤥 </span>' # Good
+         elif [ '<span>$LEVEL</span>' -ge 40 ]; then
+            ICON='<span>󰤢 </span>' # Fair
+          elif [ '<span>$LEVEL</span>' -ge 20 ]; then
+            ICON='<span>󰤟 </span>' # Weak
+          else
+            ICON='<span>󰤯 </span>' # Very Weak
+          fi
+	fi
+	echo $ICON
 else
-	echo $ADAPTER
+	echo '<span>󰈀 </span>'
 fi

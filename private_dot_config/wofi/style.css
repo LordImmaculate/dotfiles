@@ -1,9 +1,11 @@
+@import '/home/emild/.config/wofi/colors.css';
+
 window {
-  background-color: transparent;
+  background-color: @surface_container;
 }
 
 * {
-  font-family: JetbrainsMono Nerd Font;
+  font-family: Figtree;
   color: #fff;
 }
 
@@ -30,14 +32,17 @@ window {
 }
 
 #img {
-  margin: 10px 10px;
+  margin-right: 1rem;
 }
 
 #entry {
+  padding: 1rem;
   border-radius: 0.5rem;
+  background-color: @surface_container_low;
+  margin-bottom: 0.5rem;
 }
 
 #entry:selected {
   background-color: transparent;
-  border: 1.5px solid #7dd3fc;
+  border: 1.5px solid @primary;
 }

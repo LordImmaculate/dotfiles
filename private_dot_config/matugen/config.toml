@@ -4,35 +4,43 @@ arguments = ["img", "--transition-type", "center"]
 set = true
 
 [templates.gtk3]
-input_path = '~/.templates/gtk-colors.css'
+input_path = '~/.config/matugen/templates/gtk-colors.css'
 output_path = '~/.config/gtk-3.0/gtk.css'
 # post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3'
 
 [templates.gtk4]
-input_path = '~/.templates/gtk-colors.css'
+input_path = '~/.config/matugen/templates/gtk-colors.css'
 output_path = '~/.config/gtk-4.0/gtk.css'
 # post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3'
 
 [templates.waybar]
-input_path = '~/.templates/colors.css'
+input_path = '~/.config/matugen/templates/colors.css'
 output_path = '~/.config/waybar/colors.css'
-post_hook = 'pkill waybar && waybar &'
+post_hook = 'killall waybar && waybar &'
+
+[templates.wofi]
+input_path = '~/.config/matugen/templates/colors.css'
+output_path = '~/.config/wofi/colors.css'
 
 [templates.dunst]
-input_path = '~/.templates/dunstrc'
+input_path = '~/.config/matugen/templates/dunstrc'
 output_path = '~/.config/dunst/dunstrc'
 post_hook = 'pkill dunst'
 
 [templates.kitty]
-input_path = '~/.templates/kitty-colors.conf'
+input_path = '~/.config/matugen/templates/kitty-colors.conf'
 output_path = '~/.config/kitty/colors.conf'
 post_hook = 'pkill -SIGUSR1 kitty'
 
-[templates.vesktop]
-input_path = '~/.templates/midnight-discord.css'
-output_path = '~/.config/vesktop/themes/midnight-discord.css'
+[templates.vencord]
+input_path = '~/.config/matugen/templates/midnight-discord.css'
+output_path = '~/.config/Vencord/themes/midnight-discord.css'
 
 [templates.spicetify]
-input_path = '~/.templates/colors.ini'
-output_path = '~/.config/spicetify/Themes/ziro/color.ini'
-post_hook = 'spicetify apply'
+input_path = '~/.config/matugen/templates/spicetify.ini'
+output_path = '~/.config/spicetify/Themes/Ziro/color.ini'
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+post_hook = 'hyprctl reload'
